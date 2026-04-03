@@ -1,0 +1,19 @@
+meta {
+  name: Put post
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "question": "ddddd",
+    "answer": "dsdadsasdasd",
+    "keywords": ["dsa"]
+  }
+}
