@@ -5,7 +5,11 @@ meta {
 }
 
 delete {
-  url: {{baseUrl}}/1
+  url: {{baseUrl}}/api/questions/9
   body: none
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc3NzAyMjgyMCwiZXhwIjoxNzc3MDI2NDIwfQ.e4DzcnfQiewc-hpl4EqkhBmHUfYng8eMRXMLcph9n5c
 }

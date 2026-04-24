@@ -1,11 +1,11 @@
 meta {
-  name: Put post
+  name: POST post
   type: http
   seq: 1
 }
 
-put {
-  url: {{baseUrl}}/api/questions/9
+post {
+  url: {{baseUrl}}/api/questions
   body: json
   auth: bearer
 }
@@ -16,8 +16,12 @@ auth:bearer {
 
 body:json {
   {
-    "question": "ddddd",
-    "answer": "dsdadsasdasd",
-    "keywords": ["dsa"]
+    "question": "what is 1+1",
+    "answer": "2"
   }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
 }

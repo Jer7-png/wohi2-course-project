@@ -1,12 +1,12 @@
 meta {
-  name: Put post
+  name: GET posts
   type: http
   seq: 1
 }
 
-put {
-  url: {{baseUrl}}/api/questions/9
-  body: json
+get {
+  url: {{baseUrl}}/api/questions
+  body: none
   auth: bearer
 }
 
@@ -14,10 +14,7 @@ auth:bearer {
   token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc3NzAyMTk1MSwiZXhwIjoxNzc3MDI1NTUxfQ.vXpZEEXWjZVuBw46NXGQ4dYjlA4vpzZcQHWKBq_5kqY
 }
 
-body:json {
-  {
-    "question": "ddddd",
-    "answer": "dsdadsasdasd",
-    "keywords": ["dsa"]
-  }
+settings {
+  encodeUrl: true
+  timeout: 0
 }
